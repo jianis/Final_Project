@@ -26,6 +26,16 @@ def create_player():
 
     return s
 
+def create_waiting_time(a):
+    # Uniform distribution
+    Size = 10000
+    lower = 0
+    upper = 600
+    # np.random.seed(0)
+    s = np.random.uniform(lower, upper, Size)
+    # plt.hist(s, 30, normed=True)
+    # plt.show()
+    return s
 
 def create_match_pool(player_list, range):
     start = time.time()
